@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
 <head>
 	<title>Settings Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -8,53 +10,122 @@
 </head>
 <body class="background">
 <center>
+	<div class="w3-container">
+	  <h1>Settings</h1>
+	</div>
+
 
   <div class="grid-container" name="mainsettings">
-    <div class="grid-item">Notifications</div>
-    <div class="grid-item">Notification frequency</div>
-    <div class="grid-item">Phone Shut off</div>
-  </div>
+		<div class="grid-item">General</div>
+
+		<div class="row1">
+			<div class="column"><div class="grid-item">Notifications</div></div>
+			<div class="column2">
+				<label class="switch" name="facebookswitch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+
+		<div class="row2">
+			<div class="column"><div class="grid-item">Notification frequency</div></div>
+			<div class="column2">
+				<label class="switch" name="facebookswitch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+
+		<div class="row3">
+			<div class="column"><div class="grid-item">Phone Shut off</div></div>
+			<div class="column2">
+				<label class="switch" name="facebookswitch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+  	</div>
+
+		<div class="row3">
+			<div class="column"><div class="grid-item">lockout</div></div>
+			<div class="column2">
+				<label class="switch" name="facebookswitch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+
+		<div class="row5">
+			<div class="column"><div class="grid-item">Alerts until lockout</div></div>
+			<div class="column2">
+				<input type="number" name="alerts"><br>
+			</div>
+		</div>
+
+	</div>
+
 
   <div class="grid-container" name="applications">
-    <div class="grid-item" name="Distraction">Apps for Distraction</div>
-    <div class="grid-item" name="facebook">Facebook</div>
+		<div class="grid-item" name="Distraction">Distractions</div>
 
-    <label class="switch" name="switch">
-      <input type="checkbox">
-      <span class="slider round"></span>
-    </label>
+		<div class="row6">
+		  <div class="column"><div class="grid-item" name="facebook">Facebook</div></div>
+		  <div class="column2">
+				<label class="switch" name="facebookswitch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
 
-    <div class="grid-item">Instagram</div>
-    <div class="grid-item">Snapchat</div>
-    <div class="grid-item">Twitter</div>
-    <div class="grid-item">Web</div>
+		<div class="row7">
+				<div class="column"><div class="grid-item" name="instagram">Instagram</div></div>
+		    <div class="column2">
+					<label class="switch">
+				  	<input type="checkbox">
+				  	<span class="slider round"></span>
+					</label>
+				</div>
+		</div>
+
+
+		<div class="row8">
+			<div class="column"><div class="grid-item" name="snapchat">Snapchat</div></div>
+			<div class="column2">
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+
+		<div class="row9">
+			<div class="column"><div class="grid-item" name="twitter">Twitter</div></div>
+			<div class="column2">
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+
+		<div class="row10">
+			<div class="column"><div class="grid-item" name="web">Web</div></div>
+			<div class="column2">
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
   </div>
 
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
 
   <div style="margin-top: 40px;">
-    <a href="">Go back </a>
+    <a href="">Go back</a>
   </div>
 
 
