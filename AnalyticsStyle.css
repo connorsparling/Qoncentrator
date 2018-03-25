@@ -27,35 +27,32 @@ tr:hover {
 }
 
 .grid-container {
-  display: grid;
-	grid-row-gap: 1px;
 	background: #D3D3D3;
-	border-bottom: 3px solid #707070;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	border-top: 5px solid #D3D3D3;
+	border-bottom: 5px solid #707070;
 }
 
 .date-container {
   display: grid;
-  	grid-template-columns: 30px auto 30px;
+  	grid-template-columns: 50px auto auto 50px;
 	border-style: solid;
 	border-color: #39A9FF;
 	border-radius: 8px;
+	border-width: 5px;
 	background: white;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .dropdown-container {
   display: grid;
-  	grid-template-columns: auto 30px;
+  	grid-template-columns: auto 50px;
 	border-style: solid;
 	border-color: #39A9FF;
 	border-radius: 8px;
+	border-width: 5px;
 	background: white;
 	margin-right: 10px;
 	margin-top: 10px;
@@ -68,6 +65,7 @@ tr:hover {
 	border-style: solid;
 	border-color: #39A9FF;
 	border-radius: 8px;
+	border-width: 5px;
 	background: white;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -77,20 +75,40 @@ tr:hover {
 
 .gop-container {
   display: grid;
-  	grid-template-columns: auto auto;
+  	grid-template-columns: 60% 40%;
 	background: #D3D3D3;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 5px;
+	margin-bottom: 0px;
 }
 
-.graph-container {
+.details-container {
 	display: grid;
 	border-style: solid;
-	border-color: #39A9FF;
+	border-color: #707070;
 	border-radius: 12px;
+	border-width: 5px;
 	background: white;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.main-details-container {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	border-bottom: 5px solid #707070;
+	height: 65px;
+}
+
+.sub-details-container {
+	display: grid;
+	grid-template-columns: 5% 55% 40%;
+	background-color: #D3D3D3;
+	border-bottom: 5px solid #707070;
+	height: 65px;
 }
 
 h1 {
@@ -106,12 +124,43 @@ input {
 }
 
 .grid-item {
-	font-size: 20px;
+	font-size: 35px;
+	color: #404040;
+	height: 50px;
+}
+
+.blank-space {
+	font-size: 35px;
+	height: 15px;
 }
 
 .opt-item {
-	font-size: 20px;
+	font-size: 35px;
+	color: #404040;
 	border-right: solid #39A9FF;
+	height: 50px;
+}
+
+.opt-item-sel {
+	font-size: 35px;
+	color: white;
+	border-right: solid #39A9FF;
+	background-color: #39A9FF;
+	height: 50px;
+}
+
+.leftalligned {
+	font-size: 45px;
+	color: #404040;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.rightalligned {
+	font-size: 45px;
+	color: #404040;
+	text-align: right;
+	margin-right: 10px;
 }
 
 .body {
