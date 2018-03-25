@@ -21,15 +21,20 @@ tr:hover {
 .grid-container {
   display: grid;
 	grid-row-gap: 1px;
-	border-style: groove;
-	border-color: #D3D3D3;
-	border-radius: 5px;
 	background: #D3D3D3;
+	border-bottom: 3px solid #707070;
+}
+
+.grid-buttons {
+  display: grid;
+	border-style: solid;
+	border-color: #39A9FF;
+	border-radius: 3px;
+	background: white;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-
 }
 
 h1 {
@@ -52,9 +57,20 @@ input {
 	font-size: 20px;
 }
 
-.column {
+.columnleft {
     float: left;
 		margin-left: 40px;
+}
+
+.columncenter {
+    float: center;
+		margin-right: 40px;
+		margin-left: 40px;
+}
+
+.columnright {
+    float: right;
+		margin-right: 40px;
 }
 
 .switch {
@@ -69,4 +85,8 @@ input {
 
 .right {
     width: 25%;
+}
+
+.graph-container {
+	background-color: grey;
 }
