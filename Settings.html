@@ -5,18 +5,18 @@
 <head>
 	<title>Settings Page</title>
 	<link rel="stylesheet" type="text/css" href="SettingsStyle.css">
-	<link rel="stylesheet" type="text/css" href="Buttons.css">
+	<link rel="stylesheet" type="text/css" href="SettingsButtons.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body class="background">
-<center>
-	<div class="w3-container">
+
+	<div class="grid-container" name="title">
 	  <h1>Settings</h1>
 	</div>
 
-
+<center>
   <div class="grid-container" name="mainsettings">
-		<div class="grid-item">General</div>
+		<b><div class="grid-item">General</div></b>
 
 		<div class="row1">
 			<div class="column"><div class="grid-item">Notifications</div></div>
@@ -69,7 +69,7 @@
 
 
   <div class="grid-container" name="applications">
-		<div class="grid-item" name="Distraction">Distractions</div>
+		<b><div class="grid-item" name="Distraction">Distractions</div></b>
 
 		<div class="row6">
 		  <div class="column"><div class="grid-item" name="facebook">Facebook</div></div>
@@ -122,6 +122,38 @@
 			</div>
 		</div>
   </div>
+
+	<div class="grid-container" name="additions">
+		<b><div class="grid-item" name="connections">Connections</div></b>
+		<div class="row11">
+			<div class="column"><div class="grid-item" name="googlecalender">Google Calender</div></div>
+			<div class="column2">
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+
+
+		<div class="row12">
+			<div class="column"><div class="grid-item" name="automatic">Automatic</div></div>
+			<div class="column2">
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+		<small><p>If automatic is chosen, the application will automatically start tracking time on social
+			media during class time connected through Google Calender.</p><small>
+
+	</div>
+
+
+
+
+	</div>
 
 
   <div style="margin-top: 40px;">
