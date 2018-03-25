@@ -1,5 +1,5 @@
 .background{
-	background-color: rgb(130, 226, 237);
+	background-color: #1E90FF;
 }
 
 .img{
@@ -12,6 +12,9 @@ table, th, td {border: 1px solid black;}
 .header {
   height:30px;
   margin-top:20px;
+}
+p {
+	font-size: smaller;
 }
 
 tr:hover {
@@ -34,22 +37,33 @@ tr:hover {
 
 h1 {
 	font-size: 14px;
+	padding-left: 15px
 }
 
 input {
 	margin-bottom: 5px;
 	width: 40px;
-	margin-right: 0px;
 	border-style: solid;
 	border-radius: 3px;
 }
 
 .grid-item {
 	font-size: 20px;
-	border-top: 1px;
 }
 .body {
 	font-size: 20px;
+}
+
+.alerts {
+	margin-right: 30px;
+}
+
+.row3 {
+	top-border: 2px;
+}
+
+div {
+	border: 3px;
 }
 
 .column {
