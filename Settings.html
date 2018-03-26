@@ -10,13 +10,15 @@
 </head>
 <body class="background">
 
-	<div class="grid-container" name="title">
+	<div class="details-container" name="title" style="text-align: center;">
 	  <h1>Settings</h1>
 	</div>
 
 <center>
-  <div class="grid-container" name="mainsettings">
+  <div class="details-container" name="mainsettings">
 		<b><div class="grid-item">General</div></b>
+		<div class="main-details-container">
+			<div class="blank-space"></div>
 
 		<div class="row1">
 			<div class="column"><div class="grid-item">Notifications</div></div>
@@ -27,16 +29,18 @@
 				</label>
 			</div>
 		</div>
+<div class="blank-space"></div>
 
 		<div class="row2">
-			<div class="column"><div class="grid-item">Notification frequency</div></div>
+			<div class="column"><div class="grid-item">Notification Frequency</div></div>
 			<div class="column2">
-				<label class="switch" name="facebookswitch">
-					<input type="checkbox">
-					<span class="slider round"></span>
-				</label>
+				<div class="column3">
+				<input type="number" name="freq" align="margin-right" style="width: 100px;">
+				<p style="margin-left: 30px; font-size: 20px;">   seconds </p><br>
+			</div>
 			</div>
 		</div>
+<div class="blank-space"></div>
 
 		<div class="row3">
 			<div class="column"><div class="grid-item">Phone Shut off</div></div>
@@ -47,9 +51,10 @@
 				</label>
 			</div>
   	</div>
+<div class="blank-space"></div>
 
 		<div class="row3">
-			<div class="column"><div class="grid-item">lockout</div></div>
+			<div class="column"><div class="grid-item">Lockout</div></div>
 			<div class="column2">
 				<label class="switch" name="facebookswitch">
 					<input type="checkbox">
@@ -57,20 +62,26 @@
 				</label>
 			</div>
 		</div>
+<div class="blank-space"></div>
 
 		<div class="row5">
-			<div class="column"><div class="grid-item">Alerts until lockout</div></div>
-			<div class="column2">
-				<input type="number" name="alerts" align="margin-right"><br>
+			<div class="column"><div class="grid-item">Alerts Until Lockout</div></div>
+			<div class="column3">
+				<input type="number" name="alerts" align="margin-right" style="width: 100px;">
+				<p style="margin-right: 40px; font-size: 20px;">.</p><br>
 			</div>
 		</div>
-
+		<div class="blank-space"></div>
 	</div>
+	<div class="blank-space"></div>
+
+</div>
 
 
-  <div class="grid-container" name="applications">
+<div class="details-container" name="applications">
 		<b><div class="grid-item" name="Distraction">Distractions</div></b>
-
+	<div class="main-details-container">
+		<div class="blank-space2"></div>
 		<div class="row6">
 		  <div class="column"><div class="grid-item" name="facebook">Facebook</div></div>
 		  <div class="column2">
@@ -121,10 +132,14 @@
 				</label>
 			</div>
 		</div>
+	</div>
+		<div class="blank-space"></div>
   </div>
 
-	<div class="grid-container" name="additions">
+	<div class="details-container" name="additions">
 		<b><div class="grid-item" name="connections">Connections</div></b>
+		<div class="main-details-container">
+		<div class="blank-space2"></div>
 		<div class="row11">
 			<div class="column"><div class="grid-item" name="googlecalender">Google Calender</div></div>
 			<div class="column2">
@@ -145,20 +160,12 @@
 				</label>
 			</div>
 		</div>
-		<small><p>If automatic is chosen, the application will automatically start tracking time on social
-			media during class time connected through Google Calender.</p><small>
+		<div class="row12">
+		<div class="note">If automatic is chosen, the application will automatically start tracking time on social media during class time connected through Google Calender.</div>
+		</div>
+		</div>
+		<div class="blank-space"></div>
 	</div>
-
-	</div>
-
-
-  <div style="margin-top: 40px;">
-    <a href="login.html">Go back</a>
-  </div>
-
-
-
-
 </center>
 </body>
 </html>
