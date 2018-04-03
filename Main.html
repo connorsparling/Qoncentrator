@@ -4,17 +4,65 @@
 <head>
 	<title>Qoncentrator</title>
 	<link rel="stylesheet" type="text/css" href="MainStyle.css">
+	<script src='lib/jquery.min.js'></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body class="background">
 <center>
+	<div id="myModal" class="modal fade" role="dialog" style="background-color: red;">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 style="font-size: 30px;" class="modal-title">Alert</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p style="font-size: 17px;">Stop using your phone</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
 	<div class = "main-container">
-		<embed src="Settings.html" height="100%" width="100%"></embed>
+		<embed id="settings" hidden src="Settings.html" height="100%" width="100%"></embed>
+		<embed id="analytics" src="Analytics.html" height="100%" width="100%"></embed>
+		<embed id="calander" hidden src="calendar.html" height="100%" width="100%"></embed>
 	</div>
 	<div class="footer-container">
-		<div class="grid-item-border"><img src="Calendar Icon.png" align="center" height="100%"></div>
-		<div class="grid-item-border"><img src="Analytics Icon.png" align="center" height="100%"></div>
-		<div class="grid-item"><img src="Settings Icon.png" align="center" height="100%"></div>
+		<div class="grid-item-border"><img src="Calendar Icon.png" align="center" height="100%" onclick="showCalander()"></div>
+		<div class="grid-item-border"><img src="Analytics Icon.png" align="center" height="100%" onclick="showAnalytics()"></div>
+		<div class="grid-item-border"><img src="Settings Icon.png" align="center" height="100%" onclick="showSettings()"></div>
 	</div>
 </center>
+<script>
+	window.onload = function(){
+		console.log("Hello");
+		window.setInterval(notifyMe, 10000);
+	};
+
+	function showCalander(){
+		$("#settings").hide();
+		$("#analytics").hide();
+		$("#calander").show();
+	}
+	function showAnalytics(){
+		$("#settings").hide();
+		$("#analytics").show();
+		$("#calander").hide();
+	}
+	function showSettings(){
+		$("#settings").show();
+		$("#analytics").hide();
+		$("#calander").hide();
+	}
+	function notifyMe() {
+		$("#myModal").modal();
+	}
+</script>
 </body>
 </html>
